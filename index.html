@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css.css" />
+    <title>Zuzanna Ganobis - zadanie rekrutacyjne</title>
+  </head>
+  <body>
+    <section class="panel">
+      <div class="panel__header">
+        <div class="panel__title">NASZE OFERTY</div>
+        <div class="panel__selection">
+          <label class="selection__label">
+            <select class="selection__price">
+              <option style="display: none" selected>Filtruj po cenie</option>
+              <option value="decreasing">Cena malejąco</option>
+              <option value="grows">Cena rosnąco</option>
+            </select>
+          </label>
+          <label class="selection__label">
+            <select class="selection__model">
+              <option style="display: none" value="all" selected>
+                Wybierz model
+              </option>
+              <option class="selection__model--prototype" value=""></option>
+            </select>
+          </label>
+          <button class="selection__btn">Zatwierdź wybór</button>
+        </div>
+      </div>
+      <section class="panel__offer">
+        <ul class="panel__list offer">
+          <li class="offer__item offer__item--prototype">
+            <a href="">
+              <img class="offer__img" src="" alt="CAR PHOTO" />
+              <div class="offer__model"></div>
+              <div class="offer__information"></div>
+              <div class="offer__description"></div>
+              <div class="offer__price">
+                <span class="offer__price--param"></span><sup> PLN</sup>
+              </div>
+              <div class="offer__gross-net">
+                <span class="offer__gross-net--param"></span>
+                / Faktura VAT
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </section>
+    <script src="./js.js"></script>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Tahoma, Arial, sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  background-color: #f0f0f0;
+}
+.offer__item--prototype,
+.selection__model--prototype {
+  display: none;
+}
+.panel {
+  padding: 30px;
+}
+.panel__title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.panel__selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+select,
+.selection__btn {
+  min-width: 130px;
+  padding: 5px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 0 #ccc, 0 -1px #fff inset;
+  -moz-box-shadow: 0 1px 0 #ccc, 0 -1px #fff inset;
+  box-shadow: 0 1px 0 #ccc, 0 -1px #fff inset;
+  background: #f8f8f8;
+  color: #888;
+  border: none;
+  outline: none;
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+.selection__btn {
+  transition: color 0.5s, box-shadow 1s;
+}
+.selection__btn:hover {
+  color: #000;
+  box-shadow: 0 2px 0 rgb(142, 140, 140), 0 -1px #fff inset;
+}
+label {
+  position: relative;
+}
+label:after {
+  content: "<>";
+  font: 11px "Consolas", monospace;
+  color: #aaa;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 8px;
+  top: 4px;
+  padding: 0 0 2px;
+  border-bottom: 1px solid #ddd;
+  position: absolute;
+  pointer-events: none;
+}
+label:before {
+  content: "";
+  right: 6px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  background: #f8f8f8;
+  position: absolute;
+  pointer-events: none;
+  display: block;
+}
+.panel__list {
+  align-content: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.offer__item {
+  position: relative;
+  margin: 15px 10px 15px 10px;
+  font-size: 12px;
+  width: 200px;
+  height: 330px;
+  outline: 1px solid #000;
+  background-color: #fff;
+}
+.offer__img {
+  padding-top: 15px;
+  width: 100%;
+  object-fit: contain;
+}
+.offer__model {
+  font-size: 18px;
+  margin: 10px;
+  color: #000;
+}
+.offer__information,
+.offer__description,
+.offer__gross-net {
+  font-size: 10px;
+  margin: 10px;
+  color: #656668;
+}
+.offer__price {
+  position: absolute;
+  right: 10px;
+  bottom: 30px;
+  font-size: 16px;
+  color: #db261c;
+}
+.offer__price--param {
+  font-size: 20px;
+}
+.offer__gross-net {
+  position: absolute;
+  right: 0px;
+  bottom: 5px;
+}
+@media (min-width: 800px) {
+  .panel__selection {
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+  .offer__item {
+    width: 150px;
+    height: 330px;
+  }
+}
